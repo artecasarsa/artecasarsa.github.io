@@ -1,0 +1,129 @@
+
+
+@media (max-width: 800px) {
+
+	.sfondo{
+		background:
+		    linear-gradient(
+		      rgba(0, 0, 0, 0.20), 
+		      rgba(0, 0, 0, 0.20)
+		    ), url("img/Chiesetta Panoramica da Entrata - Copia.jpg");
+
+		//height: 50vh;
+		max-width: 100%;
+		//margin-right: 0vw;
+		background-position: center;
+		background-attachment: fixed;
+		//background-size: cover;
+		padding-top: 2vw;
+		padding-bottom: 12vw;
+		padding-left: 11vw;
+		padding-right: 11vw;
+		//position: relative;
+		text-align: center;
+	 }
+
+	.titolo-pagina{
+	  text-align: center;
+	  font-family: "Arvo", monospace;
+	  color: #241023;
+	  font-size: 7vw;
+
+	  background-color: #E0777D;
+	  //width: 70%;
+	  //top: 100px;
+	  position: relative;
+	}
+
+	p.sottotitolo::first-letter{
+	  font-family: "Arvo", monospace;
+	  font-size: 17vw;
+	  font-weight: bold;
+	  float: left;
+	  margin-top: -12px;
+	  letter-spacing: 10px;
+	}
+
+	p.sottotitolo{
+	  font-family: "Montserrat_Alternates", monospace;
+	  font-size: 5vw;
+	  //color: #c6b8ab;
+	  color: white;
+	  text-align: justify;
+	  //letter-spacing: 1vw;
+	  //word-spacing: -0.5vw;
+	  padding-top: 2vw;
+	}
+
+	.paragrafo{
+		  margin-top: 20vw;
+		  margin-left: 3vw;
+		  margin-right: 3vw;
+		  //padding-bottom: 30px;
+		  display:flex;
+		  //background-color: black;
+		  justify-content: center;
+		  max-width: 100%;
+		  height:auto;
+
+		  flex-direction: column;
+		  //flex-wrap: wrap;
+		  overflow: hidden;
+		}
+
+	#p-affreschi-esterni{
+	  flex-direction: column-reverse;
+	}
+
+	.titolo-e-descrizione{
+	  align-self: center;
+	  padding: 2vw;
+	  max-width: 100%;
+	}
+
+	.titolo-paragrafo{
+	  font-family: "Arvo", monospace;
+	  //font-size: 30px;
+
+	  font-size: 6vw;
+	  letter-spacing: 0.3vw;
+
+	  word-wrap: break-word;
+	  //text-align: justify;
+
+	  //line-height: 2.3vw;
+
+	  color: white;
+	  //max-width: 370px;
+	  max-width: 100%;
+	  margin: auto;
+	  //padding-bottom: 1vw;
+	}
+
+	.descrizione{
+	  //background: white;
+	  //max-width:370px;
+	  font-family: "Montserrat_Alternates", monospace;
+	  //font-size: 20px;
+	  font-size: 4vw;
+	  color: black;
+	  //line-height: 2.2vw;
+	  align-self: center;
+	  //margin-top: 30px;
+	  //margin: auto;
+	  word-wrap: break-word;
+	  //text-align: justify;
+	  //word-break: break-all;
+	  //padding: 10px;
+	  max-width: 100%;
+
+	}
+
+	.immagine{
+	    max-width: 100%;
+	    max-height:auto;
+	    align-self: center;
+	    margin: 0vw;
+  	}
+
+}
