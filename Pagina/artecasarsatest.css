@@ -25,12 +25,12 @@
     ), url("img/Chiesetta Panoramica da Entrata - Copia.jpg");
 
     //height: 50vh;
-    max-width: 100%;
+    //max-width: 100%;
     //margin-right: 0vw;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    //background-size: cover;
+    background-size: cover;
     padding-top: 7vw;
     padding-bottom: 12vw;
     padding-left: 22vw;
