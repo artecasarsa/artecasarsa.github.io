@@ -17,14 +17,72 @@
       transform: scale(1.25) !important;
   }
 
+  /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
+
+  .titolo-sito{
+    display: flex;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 0vw;
+  margin-right: 0vw;
+
+  //font-size: 30px;
+  font-family: "Arvo", monospace;
+  //background: red;
+}
+
+  .titolo-sito img{
+  margin: 0 20px 0px 20px;
+  width: 50px;
+  height: 50px;
+}
+
+/*FINE TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
+
+/*MENU A TENDINA (DROPDOWN)*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}*/
+
+/* FINE DEL MENU A TENDINA (DROPDOWN)*/
+
   .sfondo{
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.20), 
       rgba(0, 0, 0, 0.20)
-    ), url("img/Chiesetta Panoramica da Entrata - Copia.jpg");
+    ), url("img-versutta/Chiesetta Panoramica da Entrata - Copia.jpg");
 
-    //height: 50vh;
+    height: 20vw;
     //max-width: 100%;
     //margin-right: 0vw;
     background-position: center;
@@ -153,16 +211,6 @@ body {
   overflow-x: hidden;
 }
 
-.titolo-sito{
-  margin-left: 5vw;
-  margin-top: 1vw;
-  margin-bottom: 0vw;
-  margin-right: 0vw;
-
-  //font-size: 30px;
-  font-family: "Arvo", monospace;
-  //background: red;
-}
 
 .pie-pagina{
   text-align: right;

@@ -1,1 +1,0 @@
-Aggiungere un elenco delle opere, con miniature(?) per cui quando si clicca si attiva lo scroll-behaviour: smooth, (pagina web) che porta direttamente all'opera richiesta di quella pagina.
