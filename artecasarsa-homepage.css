@@ -48,7 +48,7 @@ body {
   }
 
 .titolo-sito h2{
-  align-self: flex-end;
+  align-self: center;
   //background: red;
   margin: 0;
 }
