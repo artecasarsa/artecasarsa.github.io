@@ -1,6 +1,10 @@
 
 * {box-sizing: border-box}
 
+body {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Arvo';
   src: url('fonts/Arvo/Arvo-Regular.ttf');
@@ -22,25 +26,31 @@
 /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
   .titolo-sito{
+    //background: yellow;
     display: flex;
-  margin-left: 5vw;
-  margin-top: 0.5vw;
-  margin-bottom: 0vw;
-  margin-right: 0vw;
+    margin-left: 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+    margin-right: 0vw;
 
   //font-size: 30px;
   font-family: "Arvo", monospace;
-  //background: red;
 }
 
-  .titolo-sito img{
-  margin: 0px 20px 0px 20px;
-  width: 50px;
-  height: 50px;
-}
+  .dropdown{
+    align-self: center;
+  }
+
+  .dropdown img {
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+  }
 
 .titolo-sito h2{
-  così è più giusto, comandare la scritta da qua magari
+  align-self: flex-end;
+  //background: red;
+  margin: 0;
 }
 
 /*FINE TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
@@ -75,9 +85,9 @@
   display: block;
 }
 
-//.dropdown:hover .dropbtn {
+/*.dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
+}*/
 
 /* FINE DEL MENU A TENDINA (DROPDOWN)*/
 
@@ -86,8 +96,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
-  //margin: 0 10vw 0 10vw;
-  //margin: 10px;
+  //margin: 0 auto 0 auto;
 }
 
 /* Next & previous buttons */
