@@ -10,7 +10,8 @@
 
 @media (min-width: 800px){
   .zoom{
-    transition: transform 0.1s ;
+    transition: transform 0.1s;
+    z-index: 1;
   }
 
   .zoom:hover{
