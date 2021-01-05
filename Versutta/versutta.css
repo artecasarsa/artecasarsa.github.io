@@ -11,11 +11,11 @@
 @media (min-width: 800px){
   .zoom{
     transition: transform 0.1s;
-    z-index: 1;
   }
 
   .zoom:hover{
       transform: scale(1.25) !important;
+      z-index: 1;
   }
 
   /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
