@@ -15,7 +15,6 @@
 
   .zoom:hover{
       transform: scale(1.25) !important;
-      z-index: 1;
   }
 
   /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
@@ -203,6 +202,7 @@
     max-height:auto;
     align-self: center;
     margin: 0vw;
+    z-index: 1;
   }
 
   #td-sant-orsola{
