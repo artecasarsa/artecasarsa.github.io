@@ -113,6 +113,23 @@
     });
   </script>
 
+  <script>
+
+  	function zommclick(immagine){
+
+  		immagine.className = "zoom1"
+  	}
+
+  	var immagini = document.getElementsByClassName("immagine");
+
+  	for(var i=0; i<immagini.length; i++){
+
+  		immagini[i].onclick = function(){
+  			zoomclick(this)};
+  	}
+
+  </script>
+
  </body>
 
  <footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>
