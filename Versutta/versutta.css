@@ -15,7 +15,6 @@
 
   .zoom:hover{
       transform: scale(1.25) !important;
-      z-index: 1;
   }
 
   .zoom1{
@@ -207,6 +206,7 @@
     max-height:auto;
     align-self: center;
     margin: 0vw;
+    z-index: 1;
   }
 
   #td-sant-orsola{
