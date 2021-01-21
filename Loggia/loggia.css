@@ -109,8 +109,6 @@
   border-radius: 4px;
 }
 
-
-
 /*FINE DEL BOTTONE PER TORNARE SOPRA*/
 
   .sfondo{
@@ -118,7 +116,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.20), 
       rgba(0, 0, 0, 0.20)
-    ), url("img-versutta/Chiesetta Panoramica da Entrata - Copia.jpg");
+    ), url("img-loggia/loggia-interno.jpg");
 
     margin-top: 0.5vw;
     height: 20vw;
@@ -128,10 +126,10 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 7vw;
-    padding-bottom: 12vw;
-    padding-left: 22vw;
-    padding-right: 22vw;
+    padding-top: 4vw;
+    padding-bottom: 15vw;
+    padding-left: 17vw;
+    padding-right: 17vw;
     //position: relative;
     text-align: center;
   }
@@ -338,6 +336,3 @@ img#ascensione-parete-destra{
   }
 
 /*Settimo paragrafo - */
-
-
-
