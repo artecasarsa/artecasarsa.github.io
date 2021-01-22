@@ -17,7 +17,7 @@
  				<a href="../Versutta/versutta.html">Versutta</a>
   				<a href="../San-Floriano/san-floriano.html">San Floreano</a>
   				<a href="../Loggia/loggia.html">Loggia</a>
-  				<a href="../San-Rocco/san-rocco.html">San Rocco</a>
+  				<a href="../Santa-Croce/santa-croce.html">Santa Croce</a>
   			</span>
   		</span>
 
@@ -128,22 +128,30 @@
     });
   </script>
 
-  <script>
+   <script>
+//Get the button
+var mybutton = document.getElementById("button-scroll-top");
 
-  	function zommclick(immagine){
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-  		immagine.className = "zoom1"
-  	}
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-  	var immagini = document.getElementsByClassName("immagine");
+mybutton.onclick = function(){topFunction()};
 
-  	for(var i=0; i<immagini.length; i++){
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
-  		immagini[i].onclick = function(){
-  			zoomclick(this)};
-  	}
-
-  </script>
+</script>
 
  </body>
 
