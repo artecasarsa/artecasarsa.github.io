@@ -22,6 +22,10 @@
     width: 10px;
   }
 
+  body{
+    //background-image: linear-gradient(black, grey);
+  }
+
   /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
   .titolo-sito{

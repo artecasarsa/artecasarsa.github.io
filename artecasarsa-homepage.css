@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  //background-image: linear-gradient(#000000, #404242);
 }
 
 @font-face {
@@ -19,7 +20,7 @@ body {
 
 .mySlides img {
   vertical-align: middle;
-  max-width: 100vw;
+  max-width: 80vw;
   max-height: 39vw;
 }
 
@@ -33,6 +34,7 @@ body {
     margin-bottom: 0vw;
     margin-right: 0vw;
     //background-color: yellow;
+    color: black;
 
   //font-size: 30px;
   font-family: "Arvo", monospace;
@@ -96,12 +98,11 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90vw;
+  max-width: 80vw;
+  /max-height: auto;
   position: relative;
-  margin: auto;
-  //margin: 0 auto 0 auto;
-  //background: blue;
-}
+  margin: 0 auto;
+  }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -158,6 +159,10 @@ body {
 }
 
 /* The dots/bullets/indicators */
+.puntini{
+  
+}
+
 .dot {
   cursor: pointer;
   height: 15px;

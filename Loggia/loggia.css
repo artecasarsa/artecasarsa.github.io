@@ -15,7 +15,7 @@
 
   .zoom:hover{
       transform: scale(1.25) !important;
-      z-index: 1;
+      z-index: 2;
   }
 
   .zoom1{
@@ -110,6 +110,23 @@
 }
 
 /*FINE DEL BOTTONE PER TORNARE SOPRA*/  
+
+/*BOTTONE PER LA HOMEPAGE*/
+#button-home{
+  display: block;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: auto;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: ;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+/*FINE DEL BOTTONE PER LA HOMEPAGE*/
 
   .sfondo{
     background:
