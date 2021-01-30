@@ -1,5 +1,5 @@
 
-* {box-sizing: border-box}
+*{box-sizing: border-box}
 
 body {
   margin: 0;
@@ -16,6 +16,16 @@ body {
     src: url("fonts/MontserratAlternates-Bold.ttf"); 
 }
 
+@media (max-width: 800px){
+
+  #mapid{
+    margin: 0 auto;
+
+  }
+
+  
+}
+
 /*SLIDES*/
 .mySlides {display: none}
 
@@ -29,9 +39,9 @@ body {
 /*MAPPA*/
 
 #mapid{
-  height: 400px;
-  margin-left: 80px;
-  margin-right: 80px;
+  height: 40vw;
+  //width: 20vw;
+  margin: 1vw 5vw;
 }
 
 /*FINE MAPPA*/
@@ -211,4 +221,5 @@ body {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+
 }

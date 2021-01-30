@@ -36,7 +36,7 @@
   position: absolute;
   right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 10vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -185,11 +185,19 @@
   	}
 
   	.mappa{
-  	display: block;
-  	width: 2vw;
-  	//margin-top: 4vw;
-  	margin-left: auto;
-  	margin-right: auto;
-}
+  		display: none;
+  	}
+
+  	.mappa1{
+  		display: block;
+ 		width: 99vw;
+ 		margin-top: 2vw;
+  		margin-left: auto;
+ 		margin-right: auto;
+  	}
+
+  	#p-san-antonio{
+ 		margin-top: 5px;
+	}
 
 }
