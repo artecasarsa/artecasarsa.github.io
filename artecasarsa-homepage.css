@@ -16,6 +16,7 @@ body {
     src: url("fonts/MontserratAlternates-Bold.ttf"); 
 }
 
+/*SLIDES*/
 .mySlides {display: none}
 
 .mySlides img {
@@ -23,6 +24,17 @@ body {
   max-width: 80vw;
   max-height: 39vw;
 }
+/*FINE SLIDES*/
+
+/*MAPPA*/
+
+#mapid{
+  height: 400px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/*FINE MAPPA*/
 
 /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 

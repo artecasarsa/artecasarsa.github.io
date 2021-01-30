@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="artecasarsa-homepage.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
 
 </head>
 
@@ -73,6 +76,8 @@
   <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 
+<div id="mapid"></div>
+
 <script>
   var slideIndex = 1;
   var timeoutS;
@@ -127,6 +132,33 @@
   }
  
 </script>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+</script>
+
+<script>
+  var mymap = L.map('mapid').setView([45.9443968, 12.8429443], 14);
+
+  /*var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '© OpenStreetMap © CartoDB',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(mymap);*/
+
+ var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(mymap);
+
+var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).addTo(mymap);
+var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).addTo(mymap);
+var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).addTo(mymap);
+var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).addTo(mymap);
+
+</script>
+
 </body>
 
   <footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>

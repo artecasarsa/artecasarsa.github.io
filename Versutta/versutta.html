@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
  	</head>
-
- <body>
+	
+<body>
 
  	<div class="titolo-sito">
  		<span class="dropdown">
@@ -27,9 +27,8 @@
  	<div class="sfondo" id="sfondo">
     		<h1 class="titolo-pagina">Chiesetta di Sant'Antonio Abate</h1>
     		<p class="sottotitolo"><span class="Capitol">S</span>ituata in Località Versutta, a San Giovanni di Casarsa, è un concentrato di arte medievale, con opere realizzate tra il trecento e il quattrocento. La fondazione del primo oratorio risale al X-XI secolo.</p>
+    		<iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8814.30128387123!2d12.84702531830867!3d45.944540375026996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd758096d26d5%3A0x2b08aaecbdbab6!2sChiesetta%20di%20Versutta!5e1!3m2!1sit!2sit!4v1612015450865!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
-
-	<p class="testo-sotto"></p>
 
 <div class="paragrafo" id="p-san-antonio">
 
@@ -116,52 +115,67 @@
 
 
 
-<button id="button-scroll-top">Torna all'inizio</button>
+	<button id="button-scroll-top">Torna all'inizio</button>
 
-<div id="bottone">
-	<button onclick="visitPage()" id="button-home">Torna alla Home</button>
-</div>
+	<div class="bottone">
+		<button onclick="visitPage()" id="button-home">Torna alla Home</button>
+	</div>
 
-<script>
-    function visitPage(){
-        window.location="../index.html";
-    }
-</script>
+	<script>
+	    function visitPage(){
+	        window.location="../index.html";
+	    }
+	</script>
 
- <script src="librerie/aos-master/aos-master/dist/aos.js"></script>
-  <script>
-    AOS.init({
-    	delay: 250,
-    	duration: 1000,
-    });
-  </script>
+	<script src="librerie/aos-master/aos-master/dist/aos.js"></script>
+	<script>
+	    AOS.init({
+	    	delay: 250,
+	    	duration: 1000,
+	    });
+	</script>
 
-   <script>
-//Get the button
-var mybutton = document.getElementById("button-scroll-top");
+	<script>
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+		//SCROLL TO TOP
+		var mybutton = document.getElementById("button-scroll-top");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
 
-mybutton.onclick = function(){topFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+		mybutton.onclick = function(){topFunction()};
 
-</script>
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script>
 
- </body>
+		//SCROLL TO END (MAPPA)
+		var mybutton_end = document.getElementById("button-scroll-end");
 
- <footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>
-</html>
+		mybutton_end.onclick = function(){endFunction()};
+
+		// When the user clicks on the button, scroll to the end of the document
+		function endFunction() {
+		  document.body.scrollTop = 9999;
+		  document.documentElement.scrollTop = 9999;
+		}
+
+	</script>
+
+	</body>
+
+ 	<footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>
+
+ </html>

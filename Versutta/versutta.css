@@ -22,6 +22,10 @@
     width: 10px;
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
+
   body{
     //background-image: linear-gradient(black, grey);
   }
@@ -52,6 +56,7 @@
 
 .titolo-sito h2{
   align-self: center;
+  font-size: 2.5vw;
   //background: red;
   margin: 0;
 }
@@ -131,6 +136,24 @@
 }
 /*FINE DEL BOTTONE PER LA HOMEPAGE*/
 
+/*BOTTONE PER ANDARE SOTTO (MAPPA)*/
+#button-scroll-end{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: ;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/*FINE DEL BOTTONE PER ANDARE SOTTO (MAPPA*/
+
   .sfondo{
     background:
     linear-gradient(
@@ -146,7 +169,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 7vw;
+    //padding-top: 7vw;
+    padding-top: 2vw;
     padding-bottom: 12vw;
     padding-left: 22vw;
     padding-right: 22vw;
@@ -155,7 +179,8 @@
   }
 
   .titolo-pagina{
-    text-align: center;
+    //text-align: center;
+    text-align: left;
     font-family: "Arvo", monospace;
     color: #241023;
     //font-size: 3vw;
@@ -270,9 +295,21 @@ body {
 }
 
 
+.mappa{
+  display: block;
+  //margin-top: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .pie-pagina{
   text-align: right;
   font-family: "Arvo", monospace;
+}
+
+#p-san-antonio{
+  margin-top: 18vw;
 }
 
 
