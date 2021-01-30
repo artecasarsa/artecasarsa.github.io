@@ -184,4 +184,12 @@
 	    margin: 0vw;
   	}
 
+  	.mappa{
+  	display: block;
+  	width: 2vw;
+  	//margin-top: 4vw;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
 }
