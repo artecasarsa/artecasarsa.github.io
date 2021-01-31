@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1.0, user-scalable="no"/>
 
 <link href="artecasarsa-homepage.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -148,8 +148,8 @@
 }).addTo(mymap);*/
 
  var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxzoom: 19
 }).addTo(mymap);
 
 var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).addTo(mymap);
@@ -160,7 +160,6 @@ var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).addTo(myma
 </script>
 
 </body>
-
   <footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>
 
 </html> 

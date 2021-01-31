@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   //background-image: linear-gradient(#000000, #404242);
 }
 
@@ -16,32 +17,90 @@ body {
     src: url("fonts/MontserratAlternates-Bold.ttf"); 
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){ 
 
-  #mapid{
-    margin: 0 auto;
-
+  .titoloh2{
+    align-self: center;
+    //background: green;
+    font-size: 10vw;
+    margin: 0;
   }
 
-  
+  .mySlides img {
+    vertical-align: middle;
+    width: 80vw;
+    height: 100vw;
+    max-height: 39vh;
+  }
+
+  .slideshow-container {
+    width: 80vw;
+    //height: 100vw;
+    //max-height: 39vw;
+    //height: 39vw;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #mapid{
+    height: 20vh;
+  }
+
+  .pie-pagina{
+    display:none;
+    margin: 0;
+  }
+
 }
+/*-------------------------------------------TELEFONO <800px -------------------------------------*/
 
 /*SLIDES*/
+
 .mySlides {display: none}
 
 .mySlides img {
   vertical-align: middle;
-  max-width: 80vw;
+  width: 80vw;
   max-height: 39vw;
 }
+
+.slideshow-container {
+  width: 80vw;
+  max-height: 50vw;
+  //height: 39vw;
+  margin: 0 auto;
+  position: relative;
+  }
+
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 100px;
+  //position: relative;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
 /*FINE SLIDES*/
 
 /*MAPPA*/
 
-#mapid{
+/*#mapid{
+  position: relative;
   height: 40vw;
   //width: 20vw;
   margin: 1vw 5vw;
+}*/
+
+#mapid{
+  position: relative;
+  height: 50vh;
+  //max-height:39vh;
+  //width: 20vw;
+  margin: 2vw;
 }
 
 /*FINE MAPPA*/
@@ -73,9 +132,10 @@ body {
     height: 50px;
   }
 
-.titolo-sito h2{
+.titoloh2{
   align-self: center;
   //background: green;
+  //font-size: 2.5vw;
   margin: 0;
 }
 
@@ -118,14 +178,6 @@ body {
 
 /* FINE DEL MENU A TENDINA (DROPDOWN)*/
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 80vw;
-  /max-height: auto;
-  position: relative;
-  margin: 0 auto;
-  }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -156,16 +208,19 @@ body {
 /* Caption text */
 
 .titolo-pagina-slide a:hover {
-  color: #d1d3d6
+  color: #d1d3d6;
 }
+
 .titolo-pagina-slide a{
   font-family: "Arvo", monospace;
   background-color: rgba(0,0,0,0.3);
   color: white;
   text-decoration:none;
   font-size: 5vw;
-  padding: 8px 12px;
+  //padding: 8px 12px;
+  padding: 1vw, 4vw;
   position: absolute;
+  //position: relative;
   bottom: 3vw;
   width: 100%;
   text-align: center;
@@ -189,7 +244,8 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 1.5vh 2px 0 2px;
+  //position: relative;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -223,3 +279,4 @@ body {
   .prev, .next,.text {font-size: 11px}
 
 }
+
