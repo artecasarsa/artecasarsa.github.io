@@ -103,6 +103,19 @@ body {
   margin: 2vw;
 }
 
+.leaflet-popup-content-wrapper .titolo{
+  display: block;
+  font-family: "Arvo", monospace;
+  font-size: 1vw;
+  text-align: center;
+  background-color: red;
+}
+
+.leaflet-popup-content-wrapper button{
+  display: block;
+  margin: 0 auto;
+}
+
 /*FINE MAPPA*/
 
 /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/

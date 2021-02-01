@@ -48,7 +48,7 @@
 
   <div class="mySlides fade">
     
-    <img src="img-homepage/san-floriano/san-floriano-esterno1.jpg" style="width:100%">
+    <img src="img-homepage/san-floriano-esterno1.jpg" style="width:100%">
     <div class="titolo-pagina-slide">
       <a href="San-Floriano/san-floriano.html">Chiesetta di San Floriano</a>
     </div>
@@ -138,6 +138,16 @@
    crossorigin="">
 </script>
 
+<style>
+
+  .p_versutta{
+    color: blue;
+  }
+
+
+
+</style>
+
 <script>
   var mymap = L.map('mapid').setView([45.9443968, 12.8429443], 13);
 
@@ -152,21 +162,41 @@
     maxzoom: 19
   }).addTo(mymap);
 
-  var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).addTo(mymap);
-  var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).addTo(mymap);
+  /*ELEMENTI DEI VARI POPUP SUI MARKER DELLA MAPPA*/
+  var bottone_popup = "<button>VAI</button>"
+
+  var t_versutta = "<span class='titolo'>CHIESA DI SANT'ANTONIO</span><br>";
+  var img_versutta = '<img src="img-homepage/versutta-entrata.jpg" height="150px" width="200px"/><br>';
+
+  var t_san_floriano = "<span class='titolo'>CHIESA DI SAN FLOREANO</span><br>";
+  var img_san_floriano = "<img src='img-homepage/san-floriano-esterno1.jpg' height='150px' width='200px'/><br>";
+
+  var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).bindPopup(t_versutta+img_versutta+bottone_popup).addTo(mymap);
+  var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).bindPopup(t_san_floriano+img_san_floriano+bottone_popup).addTo(mymap);
   var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).addTo(mymap);
   var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).addTo(mymap);
+  /*FINE ELEMENTI DEI VARI POPUP SUI MARKER DELLA MAPPA*/
 
- function popup_versutta(){
+
+ /*function popup_versutta(){
     var popup = L.popup()
     .setLatLng([45.94407613269287, 12.857365269416649])
-    .setContent("<p>CHIESA DI SANT'ANTONIO<br/><img src='versutta-entrata.jpg'><p>This is a nice popup.</p>")
+    .setContent("<p>CHIESA DI SANT'ANTONIO<br/>"+photoImg+"<br><button>VAI</button><br/><p>This is a nice popup.</p>")
     .openOn(mymap);
   }
 
-  m_versutta.on('click', popup_versutta);
+  m_versutta.on('click', popup_versutta);*/
 
-  //var photoImg = '<img src="https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg" height="150px" width="150px"/>';
+  //m_versutta.openPopup();
+
+//changing the content on mouseover
+m_versutta.on('click', function(){
+    m_versutta.openPopup();
+});
+
+m_san_floriano.on('click', function(){
+  m_san_floriano.openPopup();
+})
 
 </script>
 
