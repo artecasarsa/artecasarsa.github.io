@@ -103,10 +103,10 @@ body {
   margin: 2vw;
 }
 
-.leaflet-popup-content-wrapper .titolo{
+.leaflet-popup-content-wrapper .titolo_popup{
   display: block;
   font-family: "Arvo", monospace;
-  font-size: 1.2vw;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   //background-color: red;
