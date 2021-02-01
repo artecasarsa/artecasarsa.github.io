@@ -8,7 +8,7 @@
     src: url("fonts/MontserratAlternates-Bold.ttf"); 
 }
 
-@media (min-width: 800px){
+@media (min-width: 896px){
   .zoom{
     transition: transform 0.1s;
   }

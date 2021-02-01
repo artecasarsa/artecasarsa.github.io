@@ -139,7 +139,7 @@
 </script>
 
 <script>
-  var mymap = L.map('mapid').setView([45.9443968, 12.8429443], 14);
+  var mymap = L.map('mapid').setView([45.9443968, 12.8429443], 13);
 
   /*var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '© OpenStreetMap © CartoDB',
@@ -147,15 +147,26 @@
   maxZoom: 19
 }).addTo(mymap);*/
 
- var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  maxzoom: 19
-}).addTo(mymap);
+  var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxzoom: 19
+  }).addTo(mymap);
 
-var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).addTo(mymap);
-var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).addTo(mymap);
-var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).addTo(mymap);
-var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).addTo(mymap);
+  var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).addTo(mymap);
+  var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).addTo(mymap);
+  var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).addTo(mymap);
+  var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).addTo(mymap);
+
+ function popup_versutta(){
+    var popup = L.popup()
+    .setLatLng([45.94407613269287, 12.857365269416649])
+    .setContent("<p>CHIESA DI SANT'ANTONIO<br/><img src='versutta-entrata.jpg'><p>This is a nice popup.</p>")
+    .openOn(mymap);
+  }
+
+  m_versutta.on('click', popup_versutta);
+
+  //var photoImg = '<img src="https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg" height="150px" width="150px"/>';
 
 </script>
 
