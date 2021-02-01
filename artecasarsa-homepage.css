@@ -86,7 +86,7 @@ body {
 
 /*FINE SLIDES*/
 
-/*MAPPA*/
+/*----------------MAPPA----------------*/
 
 /*#mapid{
   position: relative;
@@ -106,17 +106,24 @@ body {
 .leaflet-popup-content-wrapper .titolo{
   display: block;
   font-family: "Arvo", monospace;
-  font-size: 1vw;
+  font-size: 1.2vw;
+  font-weight: bold;
   text-align: center;
-  background-color: red;
+  //background-color: red;
 }
 
 .leaflet-popup-content-wrapper button{
   display: block;
   margin: 0 auto;
+  outline: none;
+  background-color: ;
+  color: black;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
 }
 
-/*FINE MAPPA*/
+/*--------------FINE MAPPA-------------*/
 
 /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 

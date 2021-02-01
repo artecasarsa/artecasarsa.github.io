@@ -171,10 +171,16 @@
   var t_san_floriano = "<span class='titolo'>CHIESA DI SAN FLOREANO</span><br>";
   var img_san_floriano = "<img src='img-homepage/san-floriano-esterno1.jpg' height='150px' width='200px'/><br>";
 
+  var t_loggia = "<span class='titolo'>LOGGIA DI SAN GIOVANNI</span><br>";
+  var img_loggia = '<img src="img-homepage/loggia-esterno1.png" height="150px" width="200px"/><br>';
+
+  var t_santa_croce = "<span class='titolo'>CHIESA DI SANTA CROCE</span><br>";
+  var img_santa_croce = '<img src="img-homepage/glisiut-esterno.jpg" height="150px" width="200px"/><br>';
+
   var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).bindPopup(t_versutta+img_versutta+bottone_popup).addTo(mymap);
   var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).bindPopup(t_san_floriano+img_san_floriano+bottone_popup).addTo(mymap);
-  var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).addTo(mymap);
-  var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).addTo(mymap);
+  var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).bindPopup(t_loggia+img_loggia+bottone_popup).addTo(mymap);
+  var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).bindPopup(t_santa_croce+img_santa_croce+bottone_popup).addTo(mymap);
   /*FINE ELEMENTI DEI VARI POPUP SUI MARKER DELLA MAPPA*/
 
 
