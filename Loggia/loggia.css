@@ -143,7 +143,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 4vw;
+    padding-top: 2vw;
     padding-bottom: 15vw;
     padding-left: 17vw;
     padding-right: 17vw;
@@ -266,12 +266,28 @@ body {
   overflow-x: hidden;
 }
 
+.mappa{
+  display: block;
+  width: 55vw;
+  //margin-top: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mappa1{
+  display: none;
+}
+
 
 .pie-pagina{
   text-align: right;
   font-family: "Arvo", monospace;
 }
 
+
+#p-facciata{
+  margin-top: 290px;
+}
 
 #td-san-antonio{
   background-color: #c6b8ab;

@@ -179,8 +179,7 @@
   }
 
   .titolo-pagina{
-    //text-align: center;
-    text-align: left;
+    text-align: center;
     font-family: "Arvo", monospace;
     color: #241023;
     //font-size: 3vw;
