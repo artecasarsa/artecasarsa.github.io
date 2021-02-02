@@ -22,6 +22,10 @@
     width: 10px;
   }
 
+html{
+  scroll-behavior: smooth;
+}
+
   /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
   .titolo-sito{
@@ -157,7 +161,7 @@
     color: #241023;
     //font-size: 3vw;
 
-    background-color: #E0777D;
+    background-color: #8e3b46;
     //width: 70%;
     //top: 100px;
     position: relative;
@@ -268,10 +272,9 @@ body {
 
 .mappa{
   display: block;
-  width: 55vw;
+  //width: 55vw;
   //margin-top: 4vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .mappa1{
