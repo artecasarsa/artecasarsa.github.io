@@ -54,10 +54,11 @@
     height: 50px;
   }
 
+
 .titolo-sito h2{
   align-self: center;
+  color: black;
   font-size: 2.5vw;
-  //background: red;
   margin: 0;
 }
 
@@ -120,8 +121,8 @@
 /*FINE DEL BOTTONE PER TORNARE SOPRA*/
 
 /*BOTTONE PER LA HOMEPAGE*/
-#button-home{
-  display: block;
+.bottone1{
+  //display: block;
   margin-top: 20px;
   margin-left: 30px;
   margin-right: auto;
@@ -152,6 +153,11 @@
   border-radius: 4px;
 }
 
+/*#bottoni-sfondo{
+  display: block;
+  margin-right: 100px;
+}*/
+
 /*FINE DEL BOTTONE PER ANDARE SOTTO (MAPPA*/
 
   .sfondo{
@@ -171,6 +177,7 @@
     background-size: cover;
     //padding-top: 7vw;
     padding-top: 2vw;
+    //padding-bottom: 12vw;
     padding-bottom: 12vw;
     padding-left: 22vw;
     padding-right: 22vw;
@@ -183,7 +190,7 @@
     font-family: "Arvo", monospace;
     color: #241023;
     //font-size: 3vw;
-
+    margin-top: 5vw;
     background-color: #E0777D;
     //width: 70%;
     //top: 100px;
@@ -296,8 +303,10 @@ body {
 
 .mappa{
   display: block;
-  width: 55vw;
-  //margin-top: 4vw;
+  //width: 55vw;
+  width: 70vw;
+  height: 35vw;
+  margin-top: 3vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -313,7 +322,7 @@ body {
 }
 
 #p-san-antonio{
- margin-top: 290px;
+ //margin-top: 290px;
 }
 
 
