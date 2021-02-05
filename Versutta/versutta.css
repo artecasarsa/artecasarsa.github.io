@@ -26,10 +26,6 @@
     scroll-behavior: smooth;
   }
 
-  body{
-    //background-image: linear-gradient(black, grey);
-  }
-
   /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
   .titolo-sito{
@@ -57,7 +53,6 @@
 
 .titolo-sito h2{
   align-self: center;
-  color: black;
   font-size: 2.5vw;
   margin: 0;
 }
@@ -77,7 +72,7 @@
   position: absolute;
   right: 0;
   background-color: #f9f9f9;
-  min-width: 10vw;
+  min-width: 12vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

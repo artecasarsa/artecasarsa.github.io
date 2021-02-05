@@ -26,48 +26,128 @@
 
  	<div class="sfondo" id="sfondo">
     		<h1 class="titolo-pagina">Loggia comunale di San Giovanni di Casarsa</h1>
-    		<p class="sottotitolo"><span class="Capitol">S</span>ulla piazza del paese, oggi piazza Vittoria, a fianco del monumentale Duomo, si erge un’antica loggia in stile veneto, luogo simbolico per gli abitanti di San Giovanni di Casarsa.  Il manufatto a tre arcate gotiche risale al ‘300 e nel passato fu usato per le riunioni civili della comunità laica, protratte fino al 1847, quando l’edificio cessò di essere sede del Comune di San Giovanni.</p>
-    		<iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.6694725172747!2d12.835345815054973!3d45.942171679109464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9b1fa9b4bb9%3A0x1a7eb21fe19d54b6!2sLoggia%20Comunale!5e1!3m2!1sit!2sit!4v1612267063218!5m2!1sit!2sit" width="900" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-    		</iframe> 		
+    		<p class="sottotitolo"><span class="Capitol">S</span>ulla piazza del paese, oggi piazza Vittoria, a fianco del monumentale Duomo, si erge un’antica loggia in stile veneto, luogo simbolico per gli abitanti di San Giovanni di Casarsa.  Il manufatto a tre arcate gotiche risale al ‘300 e nel passato fu usato per le riunioni civili della comunità laica, protratte fino al 1847, quando l’edificio cessò di essere sede del Comune di San Giovanni.</p> 		
 	</div>
 
-	<iframe class="mappa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.6694725172747!2d12.835345815054973!3d45.942171679109464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9b1fa9b4bb9%3A0x1a7eb21fe19d54b6!2sLoggia%20Comunale!5e1!3m2!1sit!2sit!4v1612267063218!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	<style>
+		.barra{
+			width:100%;
+			background-color: black;
+			overflow:hidden;
+		}
 
-	<p class="testo-sotto"></p>
+		.barra-bottone{
+			color: white;
+		    border: none;
+		    font-size: 15px;
+		    background-color: black;
+		    outline:none;
+		    padding: 5px 15px;
+		    transition-duration: 0.4s;
+		    float:left;
+		}
 
-<div class="paragrafo" id="p-facciata">
+		.barra-bottone:hover {
+		  background-color: grey;
+		}
 
-	<div class="titolo-e-descrizione" id="td-san-antonio" data-aos="fade-right">
-		<h1 class="titolo-paragrafo" id="t-san-antonio">FACCIATA DELLA LOGGIA</h1>
-		<p class="descrizione" id="d-san-antonio"><b>Sopra la porta centrale un’edicola timpanata ospita nella nicchia la statua di Sant’Antonio abate, opera dello scultore ticinese Carlo da Carona (1480 ca.-1545) realizzata intorno ai primi anni del cinquecento.</b></p>
+		.rosso{
+			color:#fff!important;
+			background-color:#f44336!important
+		}
+
+		.centro{
+			margin-left:15vw;
+		}
+	</style>
+
+<div class="w3-container">
+
+  <div class="barra">
+    <button class="barra-bottone tablink rosso centro" onclick="openCity(event,'barra-opere')">LE OPERE</button>
+    <button class="barra-bottone tablink" onclick="openCity(event,'barra-storia')">LA STORIA</button>
+    <button class="barra-bottone tablink" onclick="openCity(event,'barra-mappa')">MAPPA</button>
+  </div>
+
+  <div id="barra-opere" class="city">
+  	<div class="paragrafo" id="p-facciata">
+
+		<div class="titolo-e-descrizione" id="td-san-antonio" data-aos="fade-right">
+			<h1 class="titolo-paragrafo" id="t-san-antonio">FACCIATA DELLA LOGGIA</h1>
+			<p class="descrizione" id="d-san-antonio"><b>Sopra la porta centrale un’edicola timpanata ospita nella nicchia la statua di Sant’Antonio abate, opera dello scultore ticinese Carlo da Carona (1480 ca.-1545) realizzata intorno ai primi anni del cinquecento.</b></p>
+		</div>
+
+		<img class="immagine zoom" id="loggia-esterno" src="img-loggia/loggia-esterno1.png" data-aos="fade-left">
+		<img class="immagine zoom" id="loggia-cartello" src="img-loggia/loggia-cartello.jpg" data-aos="fade-left">
+
+		<div class="titolo-e-descrizione" id="td-san-antonio2"></div>
+
 	</div>
 
-	<img class="immagine zoom" id="loggia-esterno" src="img-loggia/loggia-esterno1.png" data-aos="fade-left">
-	<img class="immagine zoom" id="loggia-cartello" src="img-loggia/loggia-cartello.jpg" data-aos="fade-left">
+	<div class="paragrafo" id="p-pala-interno">
 
-	<div class="titolo-e-descrizione" id="td-san-antonio2"></div>
+		<div class="titolo-e-descrizione" id="td-pala-interno" data-aos="fade-right">
+			<h1 class="titolo-paragrafo" id="t-pala-interno">SACRA FAMIGLIA</h1>
+			<p class="descrizione" id="d-pala-interno"><b>All'interno della Loggia, è custodito un affresco raffigurante "La Sacra Famiglia"...</b></p>
+		</div>
 
-</div>
+		<img class="immagine zoom" id="pala-interno-madonna-e-san-antonio" src="img-loggia/loggia-sacra-famiglia.jpg" data-aos="fade-top">
 
-<div class="paragrafo" id="p-pala-interno">
-
-	<div class="titolo-e-descrizione" id="td-pala-interno" data-aos="fade-right">
-		<h1 class="titolo-paragrafo" id="t-pala-interno">SACRA FAMIGLIA</h1>
-		<p class="descrizione" id="d-pala-interno"><b>All'interno della Loggia, è custodito un affresco raffigurante "La Sacra Famiglia"...</b></p>
 	</div>
 
-	<img class="immagine zoom" id="pala-interno-madonna-e-san-antonio" src="img-loggia/loggia-sacra-famiglia.jpg" data-aos="fade-top">
+	<div class="paragrafo" id="p-affreschi-esterni">
+		<img class="immagine zoom" id="affresco-esterno-madonna" src="img-loggia/loggia-bacheca.jpg" data-aos="fade-right">
+		<img class="immagine zoom" id="chiesetta-esterno" src="img-loggia/loggia-manifesto.jpg" data-aos="fade-right">
 
-</div>
+		<div class="titolo-e-descrizione" id="td-affreschi-esterni" data-aos="fade-left">
+			<h1 class="titolo-paragrafo" id="t-affreschi-esterni">BACHECA E MANIFESTI POLITICI</h1>
+			<p class="descrizione" id="d-affreschi-esterni"><b>Sulla parete che dà verso il Duomo, è presente una bacheca, resa famosa da Pier Paolo Pasolini. Il poeta era solito affiggere manifesti politici, in cui dimostrava il suo impegno politico come segretario della sezione comunista di San Giovanni. I manifesti erano scritti a mano in italiano e in friulano, ed oggi sono conservati presso il Centro Studi Pasolini di Casarsa</b></p>
+		</div>
 
-<div class="paragrafo" id="p-affreschi-esterni">
-	<img class="immagine zoom" id="affresco-esterno-madonna" src="img-loggia/loggia-bacheca.jpg" data-aos="fade-right">
-	<img class="immagine zoom" id="chiesetta-esterno" src="img-loggia/loggia-manifesto.jpg" data-aos="fade-right">
-
-	<div class="titolo-e-descrizione" id="td-affreschi-esterni" data-aos="fade-left">
-		<h1 class="titolo-paragrafo" id="t-affreschi-esterni">BACHECA E MANIFESTI POLITICI</h1>
-		<p class="descrizione" id="d-affreschi-esterni"><b>Sulla parete che dà verso il Duomo, è presente una bacheca, resa famosa da Pier Paolo Pasolini. Il poeta era solito affiggere manifesti politici, in cui dimostrava il suo impegno politico come segretario della sezione comunista di San Giovanni. I manifesti erano scritti a mano in italiano e in friulano, ed oggi sono conservati presso il Centro Studi Pasolini di Casarsa</b></p>
 	</div>
+  </div>
+
+
+  <div id="barra-storia" class="w3-container city paragrafo descrizione" style="display:none">
+    <h2>STORIA DEL BORGO VERSUTTA E CHIESA DI SANT'ANTONIO</h2>
+    <p>Versutta (Versute in friulano standard, Versuta in friulano occidentale) è una località del comune di Casarsa della Delizia, in provincia di
+    	Pordenone, a 3 km a sud-est del capoluogo.<br>
+
+		Il nome "Versutta" deriva dalla presenza del rio Versa, piccolo corso d'acqua che attraversa il borgo.
+
+		Monumento artistico di pregio qui edificato è la chiesa di Sant'Antonio abate, risalente al XIII secolo, che contiene al suo interno cicli di affreschi del XIV e della prima metà del XV secolo.
+
+		Versutta è nota perché durante la Seconda guerra mondiale il poeta Pier Paolo Pasolini vi sfollò con la madre, mentre il centro abitato di Casarsa veniva semidistrutto dai bombardamenti.
+		All'inizio del 1945 viene fondata a Versutta l'Academiuta di lenga furlana, per la valorizzazione della lingua e della cultura friulana, di cui faceva parte lo stesso Pasolini.
+
+		Il 13 gennaio si tiene a Versutta la festa di Sant'Antonio abate.
+	</p> 
+
+  </div>
+
+  <div id="barra-mappa" class="w3-container city" style="display:none">
+  	<iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.6694725172747!2d12.835345815054973!3d45.942171679109464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9b1fa9b4bb9%3A0x1a7eb21fe19d54b6!2sLoggia%20Comunale!5e1!3m2!1sit!2sit!4v1612267063218!5m2!1sit!2sit" width="900" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+
+    <iframe class="mappa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.6694725172747!2d12.835345815054973!3d45.942171679109464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9b1fa9b4bb9%3A0x1a7eb21fe19d54b6!2sLoggia%20Comunale!5e1!3m2!1sit!2sit!4v1612267063218!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe> 
+ </div>
+
+ <script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" rosso", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " rosso";
+  }
+</script>
 
 </div>
 

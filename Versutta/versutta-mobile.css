@@ -110,6 +110,7 @@
 	  text-align: justify;
 	  //letter-spacing: 1vw;
 	  //word-spacing: -0.5vw;
+	  text-justify: distribute;
 	  padding-top: 2vw;
 	}
 

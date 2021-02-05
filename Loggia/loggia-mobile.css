@@ -65,7 +65,7 @@
 		    linear-gradient(
 		      rgba(0, 0, 0, 0.20), 
 		      rgba(0, 0, 0, 0.20)
-		    ), url("img-versutta/Chiesetta Panoramica da Entrata - Copia.jpg");
+		    ), url("img-loggia/loggia-interno.jpg");
 
 		//height: 50vh;
 		max-width: 100%;
@@ -110,6 +110,7 @@
 	  text-align: justify;
 	  //letter-spacing: 1vw;
 	  //word-spacing: -0.5vw;
+	  text-justify: distribute;
 	  padding-top: 2vw;
 	}
 

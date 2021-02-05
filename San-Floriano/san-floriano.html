@@ -27,82 +27,114 @@
  	<div class="sfondo" id="sfondo">
     		<h1 class="titolo-pagina">Chiesetta di San Floreano</h1>
     		<p class="sottotitolo"><span class="Capitol">F</span>ondata intorno alla metà del '400, è nata come oratorio privato della famiglia Franceschinis. Simbolo della devozione della gente del borgo, il suo interno è ricco di affreschi che risalgono all'inizio e alla fine del '500, realizzati da allievi della scuola del Bellunello e da Cristoforo Diana, allievo di Pomponio Amalteo.</p>
-			<iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.0131894067454!2d12.846178398363433!3d45.933523531027554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9e918ff497f%3A0x105906446e16336c!2sChiesa%20di%20San%20Floriano!5e1!3m2!1sit!2sit!4v1612266761376!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
 
-	<iframe class="mappa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.0131894067454!2d12.846178398363433!3d45.933523531027554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9e918ff497f%3A0x105906446e16336c!2sChiesa%20di%20San%20Floriano!5e1!3m2!1sit!2sit!4v1612266761376!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	<style>
 
-	<p class="testo-sotto"></p>
+		.barra{
+			width:100%;
+			background-color: black;
+			overflow:hidden;
+		}
 
-<div class="paragrafo" id="p-trinita-e-donatore">
+		.barra-bottone{
+			color: white;
+		    border: none;
+		    font-size: 15px;
+		    background-color: black;
+		    outline:none;
+		    padding: 5px 15px;
+		    transition-duration: 0.4s;
+		    float:left;
+		}
 
-	<div class="titolo-e-descrizione" id="td-trinita-e-donatore" data-aos="fade-right">
-		<h1 class="titolo-paragrafo" id="t-trinita-e-donatore">SANTISSIMA TRINITÀ E DONATORE</h1>
-		<p class="descrizione" id="d-trinita-e-donatore"><b>Più avanti sulla medesima parete è presente un affresco datato 4 giugno 1577 rappresentante la Trinità e i Santi Rocco, Urbano, Lucia ed Elena ed il donatore. Opera di un allievo della scuola dell’Amalteo.</b></p>
+		.barra-bottone:hover {
+		  background-color: grey;
+		}
+
+		.rosso{
+			color:#fff!important;
+			background-color:#f44336!important
+		}
+
+		.centro{
+			margin-left:15vw;
+		}
+
+</style>
+
+<div class="w3-container">
+
+  <div class="barra">
+    <button class="barra-bottone tablink rosso centro" onclick="openCity(event,'barra-opere')">LE OPERE</button>
+    <button class="barra-bottone tablink" onclick="openCity(event,'barra-storia')">LA STORIA</button>
+    <button class="barra-bottone tablink" onclick="openCity(event,'barra-mappa')">MAPPA</button>
+  </div>
+
+  <div id="barra-opere" class="city">
+  	<div class="paragrafo" id="p-trinita-e-donatore">
+
+		<div class="titolo-e-descrizione" id="td-trinita-e-donatore" data-aos="fade-right">
+			<h1 class="titolo-paragrafo" id="t-trinita-e-donatore">SANTISSIMA TRINITÀ E DONATORE</h1>
+			<p class="descrizione" id="d-trinita-e-donatore"><b>Più avanti sulla medesima parete è presente un affresco datato 4 giugno 1577 rappresentante la Trinità e i Santi Rocco, Urbano, Lucia ed Elena ed il donatore. Opera di un allievo della scuola dell’Amalteo.</b></p>
+		</div>
+
+		<img class="immagine zoom" id="trinita-e-donatore" src="img-san-floriano/trinita-e-donatore.jpg" data-aos="fade-left">
+
 	</div>
 
-	<img class="immagine zoom" id="trinita-e-donatore" src="img-san-floriano/trinita-e-donatore.jpg" data-aos="fade-left">
+	<div class="paragrafo" id="p-madonna-e-bambino">
 
-	<div class="titolo-e-descrizione" id="td-san-antonio2"></div>
+		<img class="immagine zoom" id="madonna-e-bambino" src="img-san-floriano/madonna-con-bambino.jpg" data-aos="fade-right">
+
+		<div class="titolo-e-descrizione" id="td-madonna-e-bambino" data-aos="fade-left">
+			<h1 class="titolo-paragrafo" id="t-madonna-e-bambino">MADONNA CON GESÙ BAMBINO</h1>
+			<p class="descrizione" id="d-madonna-e-bambino"><b>L’ultimo affresco della parete sinistra rappresenta una Madonna con Gesù Bambino, attribuibile a pittori friulani della scuola del Bellunello del tardo XVI secolo.</b></p>
+		</div>
+
+	</div>
+ </div>
+
+ <div id="barra-storia" class="w3-container city paragrafo descrizione" style="display:none">
+    <h2>STORIA DEL BORGO VERSUTTA E CHIESA DI SANT'ANTONIO</h2>
+    <p>Versutta (Versute in friulano standard, Versuta in friulano occidentale) è una località del comune di Casarsa della Delizia, in provincia di 	Pordenone, a 3 km a sud-est del capoluogo.<br>
+    	Il nome "Versutta" deriva dalla presenza del rio Versa, piccolo corso d'acqua che attraversa il borgo.
+		
+		Monumento artistico di pregio qui edificato è la chiesa di Sant'Antonio abate, risalente al XIII secolo, che contiene al suo interno cicli di affreschi del XIV e della prima metà del XV secolo.
+
+		Versutta è nota perché durante la Seconda guerra mondiale il poeta Pier Paolo Pasolini vi sfollò con la madre, mentre il centro abitato di Casarsa veniva semidistrutto dai bombardamenti.
+		All'inizio del 1945 viene fondata a Versutta l'Academiuta di lenga furlana, per la valorizzazione della lingua e della cultura friulana, di cui faceva parte lo stesso Pasolini.
+
+		Il 13 gennaio si tiene a Versutta la festa di Sant'Antonio abate.
+	</p> 
+  </div>
+
+  <div id="barra-mappa" class="w3-container city" style="display:none">
+    <iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.0131894067454!2d12.846178398363433!3d45.933523531027554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9e918ff497f%3A0x105906446e16336c!2sChiesa%20di%20San%20Floriano!5e1!3m2!1sit!2sit!4v1612266761376!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+
+	<iframe class="mappa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.0131894067454!2d12.846178398363433!3d45.933523531027554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd9e918ff497f%3A0x105906446e16336c!2sChiesa%20di%20San%20Floriano!5e1!3m2!1sit!2sit!4v1612266761376!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+	</iframe>
+  </div>
 
 </div>
 
-<div class="paragrafo" id="p-madonna-e-bambino">
+<script>
+	function openCity(evt, cityName) {
+	  var i, x, tablinks;
+	  x = document.getElementsByClassName("city");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < x.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" rosso", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " rosso";
+	}
+</script>
 
-	<img class="immagine zoom" id="madonna-e-bambino" src="img-san-floriano/madonna-con-bambino.jpg" data-aos="fade-right">
-
-	<div class="titolo-e-descrizione" id="td-madonna-e-bambino" data-aos="fade-left">
-		<h1 class="titolo-paragrafo" id="t-madonna-e-bambino">MADONNA CON GESÙ BAMBINO</h1>
-		<p class="descrizione" id="d-madonna-e-bambino"><b>L’ultimo affresco della parete sinistra rappresenta una Madonna con Gesù Bambino, attribuibile a pittori friulani della scuola del Bellunello del tardo XVI secolo.</b></p>
-	</div>
-
-</div>
-
-<div class="paragrafo" id="p-affreschi-arco">
-
-	<div class="titolo-e-descrizione" id="td-affreschi-arco" data-aos="fade-right">
-		<h1 class="titolo-paragrafo" id="t-affreschi-arco">ARCO</h1>
-		<p class="descrizione" id="d-pala-interno"><b>"La Vergine in gloria e Sant’Antonio abate in preghiera"  è opera di un maestro friulano della seconda metà del Settecento. La scena è divisa a metà da una densa nube che avvolge la Vergine in gloria, con Gesù bambino, circondata da angeli.</b></p>
-	</div>
-
-	<img class="immagine zoom" id="pala-interno-madonna-e-san-antonio" src="img-versutta/Madonna e Bambino e San Antonio in preghiera - Paletta Abside.jpg" data-aos="fade-top">
-
-	<div class="titolo-e-descrizione" id="td-pala-interno" data-aos="fade-left">
-	<p class="descrizione" id="d-pala-interno2"><b>Nella parte inferiore è presente il santo eremita inginocchiato con a lato i tradizionali attributi, tra cui il famoso maiale, e in aggiunta un teschio e una clessidra, allegoria sulla caducità della vita terrena.</b></p>
-	</div>
-
-</div>
-
-<div class="paragrafo" id="p-affreschi-medievali-ascensione">
-
-	<div class="titolo-e-descrizione" id="td-affreschi-medievali-ascensione" data-aos="fade-right">
-		<h1 class="titolo-paragrafo" id="t-affreschi-medievali-ascensione">AFFRESCHI MEDIEVALI: L'ASCENSIONE</h1>
-		<p class="descrizione" id="d-affreschi-medievali-ascensione"><b>La prima scena ritrae l’Ascensione: il Salvatore è in trono celeste, con il palmo delle mani aperto. Alla base si collocano gli Apostoli guidati dalla Vergine e da San Pietro.</b></p>
-	</div>
-
-	<img class="immagine zoom" id="ascensione-parete-destra" src="img-versutta/Ascensione - Parete Destra.jpg" data-aos="fade-left">
-
-	<div class="titolo-e-descrizione" id="td-affreschi-medievali-ascensione" data-aos="fade-left">
-	<p class="descrizione" id="d-affreschi-medievali-ascensione"><b>Questa rappresentazione, sullo stile della “Majestas Domini” e una Gerusalemme celeste sullo sfondo, suggeriscono un collegamento con il Giudizio Universale. Un altro dettaglio importante è costituito dalla cornice forma a mandorla che circonda Cristo: detta anche vescica piscis ricorda un seme ed è quindi simbolo di vita, ma è anche l’intersezione di due cerchi, l’unione di due mondi, quello terreno e quello celeste.</b></p>
-	</div>
-
-
-</div>
-
-<div class="paragrafo" id="p-sant-orsola">
-
-	<div class="titolo-e-descrizione" id="td-sant-orsola" data-aos="fade-right">
-		<h1 class="titolo-paragrafo" id="t-sant-orsola">TRIONFO DI SANT’ORSOLA E LEGGENDA</h1>
-		<p class="descrizione" id="d-asant-orsola"><b>A seguire, sempre sulla stessa parete, il Trionfo di Sant’Orsola: la martire è circondata dalle compagne, scena finale e culminante delle Storie. L’apertura di una porta laterale ha distrutto la figura di Orsola (di cui rimane il vessillo svolazzante, un frammento dell’aurola e parte del capo) e il corteo delle vergini sulla sinistra, mentre ben leggibili sono le sante del corteo sulla destra.</b></p>
-	</div>
-
-	<img class="immagine zoom" id="ascensione-parete-destra" src="img-versutta/Sant Orsola - Parete Destra.jpg" data-aos="fade-left">
-
-	<div class="titolo-e-descrizione" id="td-sant-orsola2" data-aos="fade-right">
-	<p class="descrizione" id="d-sant-orsola"><b>Una leggenda, composta alla fine del duecento,  racconta la storia di una giovane bretone di nome Orsola che, promessa sposa al figlio del re d’Inghilterra, pone come condizione un pellegrinaggio a Roma, durante il quale il giovane riceve il battesimo. Al gruppo si uniscono undicimila vergini, lo stesso papa Ciriaco, vescovi e personaggi di rango. Nel viaggio di ritorno presso le mura di Colonia la folta comitiva viene però assalita dagli Unni e Orsola, resistendo alle richieste di matrimonio del re unno, verrà trucidata insieme alle undicimila vergini da lei battezzate.</b></p>
-	</div>
-
-</div>
 
 <button id="button-scroll-top">Torna all'inizio</button>
 

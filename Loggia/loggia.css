@@ -52,7 +52,7 @@ html{
 
 .titolo-sito h2{
   align-self: center;
-  //background: red;
+  font-size: 2.5vw;
   margin: 0;
 }
 
@@ -71,7 +71,7 @@ html{
   position: absolute;
   right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 12vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -148,7 +148,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 2vw;
-    padding-bottom: 15vw;
+    padding-bottom: 13vw;
     padding-left: 17vw;
     padding-right: 17vw;
     //position: relative;
@@ -273,8 +273,11 @@ body {
 .mappa{
   display: block;
   //width: 55vw;
-  //margin-top: 4vw;
-  margin: 0 auto;
+  width: 70vw;
+  height: 35vw;
+  margin-top: 3vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mappa1{
@@ -289,7 +292,6 @@ body {
 
 
 #p-facciata{
-  margin-top: 290px;
 }
 
 #td-san-antonio{
