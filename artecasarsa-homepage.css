@@ -17,27 +17,45 @@ body {
     src: url("fonts/MontserratAlternates-Bold.ttf"); 
 }
 
-@media screen and (max-width: 800px){ 
+@media (max-width: 896px) { 
 
-  .titoloh2{
-    align-self: center;
-    //background: green;
-    font-size: 10vw;
-    margin: 0;
-  }
+   .titolo-sito{
+    display: flex;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  margin-right: 0vw;
 
-  .mySlides img {
-    vertical-align: middle;
-    width: 80vw;
-    height: 100vw;
-    max-height: 39vh;
-  }
+  //font-size: 30px;
+  font-family: "Arvo", monospace;
+  //background: red;
+}
 
-  .slideshow-container {
+  .titolo-sito img{
+  margin: 0 20px 0px 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.titolo-sito p{
+  align-self: center;
+  font-size: 9vw;
+  font-weight: bold;
+  margin: 0;
+  //background-color: red;
+}
+
+.mySlides img{
+  vertical-align: middle;
+  width: 80vw;
+  max-height: 70vw;
+}
+
+.slideshow-container {
     width: 80vw;
     //height: 100vw;
-    //max-height: 39vw;
-    //height: 39vw;
+    max-height: 350px;
+    height: 350px;
     position: relative;
     margin: 0 auto;
   }
@@ -56,17 +74,21 @@ body {
 
 /*SLIDES*/
 
-.mySlides {display: none}
+.mySlides {
+  display: none;
+}
 
-.mySlides img {
+.mySlides img{
   vertical-align: middle;
   width: 80vw;
-  max-height: 39vw;
+  //height: 39vw;
+  //max-height: 39vw;
+  width: 100%;
 }
 
 .slideshow-container {
   width: 80vw;
-  max-height: 50vw;
+  //max-height: 39vw;
   //height: 39vw;
   margin: 0 auto;
   position: relative;
@@ -160,8 +182,9 @@ body {
     height: 50px;
   }
 
-.titolo-sito h2{
+.titolo-sito p{
   align-self: center;
+  font-weight: bold;
   font-size: 2.5vw;
   margin: 0;
 }
@@ -178,12 +201,11 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  //right: 0px;
-  left: 0px;
+  right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 12vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 99;
 }
 
 .dropdown-content a {

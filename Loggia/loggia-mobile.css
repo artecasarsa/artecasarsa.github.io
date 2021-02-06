@@ -4,11 +4,11 @@
 
 	 /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
-  .titolo-sito{
+   .titolo-sito{
     display: flex;
   margin-left: 5vw;
   margin-top: 1vw;
-  margin-bottom: 0vw;
+  margin-bottom: 1.5vw;
   margin-right: 0vw;
 
   //font-size: 30px;
@@ -20,6 +20,12 @@
   margin: 0 20px 0px 20px;
   width: 50px;
   height: 50px;
+}
+
+.titolo-sito h2{
+  align-self: center;
+  font-size: 9vw;
+  margin: 0;
 }
 
 /*FINE TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
@@ -98,20 +104,23 @@
 	  font-size: 17vw;
 	  font-weight: bold;
 	  float: left;
-	  margin-top: -12px;
+	  //margin-top: -12px;
+	  //margin-top: 50px;
 	  letter-spacing: 10px;
+	  //background-color: #E0777D;
+	  line-height: 12vw;
 	}
 
 	p.sottotitolo{
 	  font-family: "Montserrat_Alternates", monospace;
-	  font-size: 5vw;
+	  font-size: 4.5vw;
 	  //color: #c6b8ab;
 	  color: white;
 	  text-align: justify;
-	  //letter-spacing: 1vw;
-	  //word-spacing: -0.5vw;
-	  text-justify: distribute;
+	  letter-spacing: -0.4vw;
+	  word-spacing: -0.5vw;
 	  padding-top: 2vw;
+	  line-height: 7vw;
 	}
 
 	.paragrafo{
