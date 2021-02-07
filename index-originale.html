@@ -4,7 +4,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1.0, user-scalable="no"/>
 
-<link href="artecasarsa-homepage.css" rel="stylesheet" type="text/css">
+<link href="artecasarsa-homepage-originale.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
@@ -27,48 +27,36 @@
         </span>
       </span>
 
-    <p id="titolo1">artecasarsa</p>
+    <p>artecasarsa</p>
   </div>
 
-  <div class="mySlides fade" id="chiesa-versutta">
-    <picture>
-      <source media="(max-width:800px)" srcset="img-homepage/versutta-entrata-mobile.png">
-      <source media="(min-width:800px)" srcset="img-homepage/versutta-entrata1.jpg">
-     <img src="img-homepage/versutta-entrata1.jpg" height="485px">
-    </picture>
+  <div class="mySlides fade">
+
+    <img src="img-homepage/versutta-entrata.jpg" style="width:100%">
     <div class="titolo-pagina-slide">
       <a href="Versutta/versutta.html">Chiesetta di Sant'Antonio Abate</a>
     </div>
   </div>
   
   <div class="mySlides fade">
-    <picture>
-      <source media="(max-width: 800px)" srcset="img-homepage/loggia-interno-mobile.png">
-      <source media="(min-width: 800px)" srcset="img-homepage/loggia-interno.jpg">
-      <img src="img-homepage/Loggia-interno.jpg" height="485px">
-    </picture>
+    
+    <img src="img-homepage/Loggia-interno.jpg" style="width:100%">
     <div class="titolo-pagina-slide">
       <a href="Loggia/loggia.html">Loggia di San Giovanni</a>
     </div>
   </div>
 
   <div class="mySlides fade">
-    <picture>
-      <source media="(max-width:800px)" srcset="img-homepage/san-floriano-esterno1-mobile.png">
-      <source media="(min-width:800px)" srcset="img-homepage/san-floriano-esterno1.jpg">
-     <img src="img-homepage/san-sloriano-esterno1.jpg" height="485px">
-    </picture>
+    
+    <img src="img-homepage/san-floriano-esterno1.jpg" style="width:100%">
     <div class="titolo-pagina-slide">
       <a href="San-Floriano/san-floriano.html">Chiesetta di San Floriano</a>
     </div>
   </div>
 
   <div class="mySlides fade">
-    <picture>
-      <source media="(max-width:800px)" srcset="img-homepage/glisiut-esterno-mobile.png">
-      <source media="(min-width:800px)" srcset="img-homepage/glisiut-esterno.jpg">
-     <img src="img-homepage/glisiut-esterno.jpg" height="485px">
-    </picture>
+    
+    <img src="img-homepage/glisiut-esterno.jpg" style="width:100%">
     <div class="titolo-pagina-slide">
       <a href="Santa-Croce/santa-croce.html">Glisiut di Santa Croce</a>
     </div>
@@ -79,8 +67,9 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
+<br>
 
-<div class="puntini">
+<div class="puntini" style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
