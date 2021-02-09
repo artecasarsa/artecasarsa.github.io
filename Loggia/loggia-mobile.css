@@ -10,6 +10,7 @@
   margin-top: 1vw;
   margin-bottom: 1.5vw;
   margin-right: 0vw;
+  color: white;
 
   //font-size: 30px;
   font-family: "Arvo", monospace;
@@ -186,6 +187,25 @@
 	  max-width: 100%;
 
 	}
+
+	.barra-storia-descrizione{
+		//background: white;
+	  //max-width:370px;
+	  font-family: "Montserrat_Alternates", monospace;
+	  //font-size: 20px;
+	  font-size: 4vw;
+	  //color: black;
+	  //line-height: 2.2vw;
+	  align-self: center;
+	  text-align: justify;
+	   margin: 6vw !important;
+	  word-wrap: break-word;
+	  //text-align: justify;
+	  //word-break: break-all;
+	  //padding: 10px;
+	  //max-width: 100%;
+	  color: white; 
+	 }	
 
 	.immagine{
 	    max-width: 100%;

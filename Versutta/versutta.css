@@ -14,8 +14,8 @@
   }
 
   .zoom:hover{
-      transform: scale(1.25) !important;
-      z-index: 1;
+      transform: scale(1.2) !important;
+      z-index: 2;
   }
 
   .zoom1{
@@ -31,10 +31,11 @@
   .titolo-sito{
     //background: yellow;
     display: flex;
-    margin-left: 5vw;
+    margin-left: 9vw;
     margin-top: 0.5vw;
     margin-bottom: 0vw;
     margin-right: 0vw;
+    color: white;
 
   //font-size: 30px;
   font-family: "Arvo", monospace;
@@ -225,6 +226,19 @@
     //overflow: hidden;
   }
 
+  .barra-paragrafo{
+    margin-top: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    //padding-bottom: 30px;
+    display:flex;
+    //background-color: black;
+    justify-content: center;
+    max-width: 100%;
+    height:auto;
+    //overflow: hidden;
+  }
+
   .titolo-e-descrizione{
     align-self: center;
     padding: 2vw;
@@ -268,6 +282,24 @@
     max-width: 100%;
   }
 
+  .barra-storia-descrizione{
+    /background: white;
+    //max-width:370px;
+    font-family: "Montserrat_Alternates", monospace;
+    //font-size: 20px;
+    font-size: 1.4vw;
+    line-height: 2.2vw;
+    align-self: center;
+    //margin-top: 30px;
+    //margin: auto;
+    word-wrap: break-word;
+    //text-align: justify;
+    //word-break: break-all;
+    //padding: 10px;
+    max-width: 100%;
+    color:white;
+  }
+
   .immagine{
     max-width: 30%;
     max-height:auto;
@@ -293,6 +325,8 @@ body {
   margin: 0vw;
   //background-color: #d1b1c8;
   overflow-x: hidden;
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(48,47,54,1) 100%);
 }
 
 
