@@ -17,7 +17,7 @@
 
   <div class="titolo-sito">
     <span class="dropdown">
-      <img src="img-homepage/Casarsa_della_Delizia-Stemma-black.png">
+      <img class="stemmino-casarsa" src="img-homepage/Casarsa_della_Delizia-Stemma-black.png">
       <span class="dropdown-content">
         <a href="index.html">Homepage</a>
         <a href="Versutta/versutta.html">Versutta</a>
@@ -32,9 +32,9 @@
 
   <div class="mySlides fade" id="chiesa-versutta">
     <picture>
-      <source media="(max-width:800px)" srcset="img-homepage/versutta-entrata-mobile.png">
-      <source media="(min-width:800px)" srcset="img-homepage/versutta-entrata1.jpg">
-     <img src="img-homepage/versutta-entrata1.jpg" height="485px">
+      <source media="(max-width:800px)" srcset="img-homepage/versutta-esterno-mobile.jpg">
+      <source media="(min-width:800px)" srcset="img-homepage/versutta-esterno-1.jpg">
+     <img src="img-homepage/versutta-esterno-1.jpg" height="485px">
     </picture>
     <div class="titolo-pagina-slide">
       <a href="Versutta/versutta.html">Chiesetta di Sant'Antonio Abate</a>
@@ -43,7 +43,7 @@
   
   <div class="mySlides fade">
     <picture>
-      <source media="(max-width: 800px)" srcset="img-homepage/loggia-interno-mobile.png">
+      <source media="(max-width: 800px)" srcset="img-homepage/Loggia-esterno-mobile1.jpg">
       <source media="(min-width: 800px)" srcset="img-homepage/Loggia-interno.jpg">
       <img src="img-homepage/Loggia-interno.jpg" height="485px">
     </picture>
@@ -54,7 +54,7 @@
 
   <div class="mySlides fade">
     <picture>
-      <source media="(max-width:800px)" srcset="img-homepage/san-floriano-esterno1-mobile.png">
+      <source media="(max-width:800px)" srcset="img-homepage/san-floriano-esterno-mobile1.jpg">
       <source media="(min-width:800px)" srcset="img-homepage/san-floriano-esterno1.jpg">
      <img src="img-homepage/san-sloriano-esterno1.jpg" height="485px">
     </picture>
@@ -65,7 +65,7 @@
 
   <div class="mySlides fade">
     <picture>
-      <source media="(max-width:800px)" srcset="img-homepage/glisiut-esterno-mobile.png">
+      <source media="(max-width:800px)" srcset="img-homepage/glisiut-esterno-mobile.jpg">
       <source media="(min-width:800px)" srcset="img-homepage/glisiut-esterno.jpg">
      <img src="img-homepage/glisiut-esterno.jpg" height="485px">
     </picture>
@@ -176,16 +176,16 @@
   var bottone_popup = "<button>SCOPRI IL LUOGO</button>"
 
   var t_versutta = "<span class='titolo_popup'>CHIESA DI SANT'ANTONIO</span><br>";
-  var img_versutta = '<img src="img-homepage/versutta-entrata.jpg" height="150px" width="200px"/><br>';
+  var img_versutta = '<img src="img-homepage/versutta-esterno-1.jpg" height="100px" width="200px"/><br>';
 
   var t_san_floriano = "<span class='titolo_popup'>CHIESA DI SAN FLOREANO</span><br>";
-  var img_san_floriano = "<img src='img-homepage/san-floriano-esterno1.jpg' height='150px' width='200px'/><br>";
+  var img_san_floriano = "<img src='img-homepage/san-floriano-esterno1.jpg' height='100px' width='200px'/><br>";
 
   var t_loggia = "<span class='titolo_popup'>LOGGIA DI SAN GIOVANNI</span><br>";
-  var img_loggia = '<img src="img-homepage/loggia-esterno1.png" height="150px" width="200px"/><br>';
+  var img_loggia = '<img src="img-homepage/Loggia-interno.jpg" height="100px" width="200px"/><br>';
 
   var t_santa_croce = "<span class='titolo_popup'>CHIESA DI SANTA CROCE</span><br>";
-  var img_santa_croce = '<img src="img-homepage/glisiut-esterno.jpg" height="150px" width="200px"/><br>';
+  var img_santa_croce = '<img src="img-homepage/glisiut-esterno.jpg" height="100px" width="200px"/><br>';
 
   var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).bindPopup(t_versutta+img_versutta+bottone_popup).addTo(mymap);
   var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).bindPopup(t_san_floriano+img_san_floriano+bottone_popup).addTo(mymap);

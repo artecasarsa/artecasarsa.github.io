@@ -35,8 +35,8 @@ body {
 
   .titolo-sito img{
   margin: 0 20px 0px 20px;
-  width: 50px;
-  height: 50px;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 #titolo1{
@@ -48,8 +48,8 @@ body {
 
 .mySlides img{
   vertical-align: middle;
-  width: 80vw;
-  max-height: 70vw !important;
+  width: 87vw !important;
+  max-height: 77vw !important;
 }
 
 .slideshow-container {
@@ -72,7 +72,8 @@ body {
 
   .barra-homepage{
 	//background-color: white;
-	margin: 0 2vw;
+	//margin: 0 5vw !important;
+  width: 87vw !important;
 	text-align: center;
 	font-family: "Arvo", monospace;
 	font-size: 5vw !important;
@@ -80,7 +81,10 @@ body {
 }
 
   #mapid{
-    height: 50vh !important;
+    //margin-left: 5vw !important;
+    margin-bottom: 2vw !important;
+    width: 87vw !important;
+    height: 70vw !important;
     //margin-top: 20px;
   }
 

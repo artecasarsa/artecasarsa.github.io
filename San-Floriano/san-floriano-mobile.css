@@ -71,14 +71,14 @@
 		    linear-gradient(
 		      rgba(0, 0, 0, 0.20), 
 		      rgba(0, 0, 0, 0.20)
-		    ), url("img-san-floriano/san-floriano-interno.jpg");
+		    ), url("img-san-floriano/san-floriano-interno-mobile.jpg");
 
 		//height: 50vh;
 		max-width: 100%;
 		//margin-right: 0vw;
 		background-position: center;
 		background-attachment: fixed;
-		//background-size: cover;
+		background-size: cover;
 		padding-top: 2vw;
 		padding-bottom: 12vw;
 		padding-left: 11vw;
