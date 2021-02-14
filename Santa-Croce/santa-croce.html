@@ -6,12 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
  	</head>
-
- <body>
+	
+<body>
 
  	<div class="titolo-sito">
  		<span class="dropdown">
- 			<img src="../img-homepage/Casarsa_della_Delizia-Stemma.png">
+ 			<img src="../img-homepage/Casarsa_della_Delizia-Stemma-black.png">
  			<span class="dropdown-content">
  				<a href="../index.html">Homepage</a>
  				<a href="../Versutta/versutta.html">Versutta</a>
@@ -25,21 +25,61 @@
  	</div>
 
  	<div class="sfondo" id="sfondo">
-    		<h1 class="titolo-pagina">Chiesetta di Sant'Antonio Abate</h1>
-    		<p class="sottotitolo"><span class="Capitol">S</span>ituata in Località Versutta, a San Giovanni di Casarsa, è un concentrato di arte medievale, con opere realizzate tra il trecento e il quattrocento. La fondazione del primo oratorio risale al X-XI secolo.</p>
+    		<h1 class="titolo-pagina">Chiesetta di Santa Croce</h1>
+    		<p class="sottotitolo">Situata in Località Versutta, a San Giovanni di Casarsa, è un concentrato di arte medievale, con opere realizzate tra il trecento e il quattrocento. La fondazione del primo oratorio risale al X-XI secolo.</p>
 	</div>
 
-	<p class="testo-sotto"></p>
 
-<div class="paragrafo" id="p-san-antonio">
+<style>
+
+.barra{
+	width:100%;
+	background-color: black;
+	overflow:hidden;
+}
+
+.barra-bottone{
+	color: white;
+    border: none;
+    font-size: 15px;
+    background-color: black;
+    outline:none;
+    padding: 5px 15px;
+    transition-duration: 0.4s;
+    float:left;
+}
+
+.barra-bottone:hover {
+  background-color: grey;
+}
+
+.rosso{
+	color:#fff!important;
+	background-color:#f44336!important
+}
+
+.centro{
+	margin-left:15vw;
+}
+
+</style>
+
+<div class="w3-container">
+  <div class="barra">
+    <button class="barra-bottone tablink rosso centro" onclick="openCity(event,'barra-opere')">LE OPERE</button>
+    <button class="barra-bottone tablink" onclick="openCity(event,'barra-storia')">LA STORIA</button>
+    <button class="barra-bottone tablink" onclick="openCity(event,'barra-mappa')">MAPPA</button>
+  </div>
+  
+  <div id="barra-opere" class="city">
+    <div class="paragrafo" id="p-san-antonio">
 
 	<div class="titolo-e-descrizione" id="td-san-antonio" data-aos="fade-right">
 		<h1 class="titolo-paragrafo" id="t-san-antonio">STATUA DI SANT'ANTONIO</h1>
 		<p class="descrizione" id="d-san-antonio"><b>Sopra la porta centrale un’edicola timpanata ospita nella nicchia la statua di Sant’Antonio abate, opera dello scultore ticinese Carlo da Carona (1480 ca.-1545) realizzata intorno ai primi anni del cinquecento.</b></p>
 	</div>
 
-	<img class="immagine zoom" id="chiesetta-esterno" src="img-versutta/Chiesetta-esterno.jpg" data-aos="fade-left">
-	<img class="immagine zoom" id="san-antonio" src="img-versutta/San Antonio Statua Esterna - Copia.jpg" data-aos="fade-left">
+	<img class="immagine zoom" id="chiesetta-esterno" src="img-santa-croce/parete-sinistra.jpg" data-aos="fade-left">
 
 	<div class="titolo-e-descrizione" id="td-san-antonio2"></div>
 
@@ -47,8 +87,9 @@
 
 <div class="paragrafo" id="p-affreschi-esterni">
 
-	<img class="immagine zoom" id="affresco-esterno-madonna" src="img-versutta/affresco-esterno-madonna.jpg" data-aos="fade-right">
-	<img class="immagine zoom" id="chiesetta-esterno" src="img-versutta/Chiesetta-esterno.jpg" data-aos="fade-right">
+
+	<img class="immagine zoom" id="affresco-esterno-completo" src="img-santa-croce/santa-agnese.jpg" data-aos="fade-right">
+	<img class="immagine zoom" id="affresco-esterno-completo" src="img-santa-croce/san-valentino.jpg" data-aos="fade-right">
 
 	<div class="titolo-e-descrizione" id="td-affreschi-esterni" data-aos="fade-left">
 		<h1 class="titolo-paragrafo" id="t-affreschi-esterni">AFFRESCHI SULLA PARETE ESTERNA</h1>
@@ -64,25 +105,17 @@
 		<p class="descrizione" id="d-pala-interno"><b>"La Vergine in gloria e Sant’Antonio abate in preghiera"  è opera di un maestro friulano della seconda metà del Settecento. La scena è divisa a metà da una densa nube che avvolge la Vergine in gloria, con Gesù bambino, circondata da angeli.</b></p>
 	</div>
 
-	<img class="immagine zoom" id="pala-interno-madonna-e-san-antonio" src="img-versutta/Madonna e Bambino e San Antonio in preghiera - Paletta Abside.jpg" data-aos="fade-top">
-
-	<div class="titolo-e-descrizione" id="td-pala-interno" data-aos="fade-left">
-	<p class="descrizione" id="d-pala-interno2"><b>Nella parte inferiore è presente il santo eremita inginocchiato con a lato i tradizionali attributi, tra cui il famoso maiale, e in aggiunta un teschio e una clessidra, allegoria sulla caducità della vita terrena.</b></p>
-	</div>
+	<img class="immagine zoom" id="pala-interno-madonna-e-san-antonio" src="img-santa-croce/costantino-rivelazione-croce.jpg" data-aos="fade-top">
 
 </div>
 
 <div class="paragrafo" id="p-affreschi-medievali-ascensione">
 
+	<img class="immagine zoom" id="ascensione-parete-destra" src="img-santa-croce/elena-costantino-legno.jpg" data-aos="fade-left">
+
 	<div class="titolo-e-descrizione" id="td-affreschi-medievali-ascensione" data-aos="fade-right">
 		<h1 class="titolo-paragrafo" id="t-affreschi-medievali-ascensione">AFFRESCHI MEDIEVALI: L'ASCENSIONE</h1>
 		<p class="descrizione" id="d-affreschi-medievali-ascensione"><b>La prima scena ritrae l’Ascensione: il Salvatore è in trono celeste, con il palmo delle mani aperto. Alla base si collocano gli Apostoli guidati dalla Vergine e da San Pietro.</b></p>
-	</div>
-
-	<img class="immagine zoom" id="ascensione-parete-destra" src="img-versutta/Ascensione - Parete Destra.jpg" data-aos="fade-left">
-
-	<div class="titolo-e-descrizione" id="td-affreschi-medievali-ascensione" data-aos="fade-left">
-	<p class="descrizione" id="d-affreschi-medievali-ascensione"><b>Questa rappresentazione, sullo stile della “Majestas Domini” e una Gerusalemme celeste sullo sfondo, suggeriscono un collegamento con il Giudizio Universale. Un altro dettaglio importante è costituito dalla cornice forma a mandorla che circonda Cristo: detta anche vescica piscis ricorda un seme ed è quindi simbolo di vita, ma è anche l’intersezione di due cerchi, l’unione di due mondi, quello terreno e quello celeste.</b></p>
 	</div>
 
 
@@ -95,7 +128,7 @@
 		<p class="descrizione" id="d-sant-orsola"><b>A seguire, sempre sulla stessa parete, il Trionfo di Sant’Orsola: la martire è circondata dalle compagne, scena finale e culminante delle Storie. L’apertura di una porta laterale ha distrutto la figura di Orsola (di cui rimane il vessillo svolazzante, un frammento dell’aurola e parte del capo) e il corteo delle vergini sulla sinistra, mentre ben leggibili sono le sante del corteo sulla destra.</b></p>
 	</div>
 
-	<img class="immagine zoom" id="ascensione-parete-destra" src="img-versutta/Sant Orsola - Parete Destra.jpg" data-aos="fade-left">
+	<img class="immagine zoom" id="sant-orsola" src="img-versutta/Sant Orsola - Parete Destra.jpg" data-aos="fade-left">
 
 	<div class="titolo-e-descrizione" id="td-sant-orsola2" data-aos="fade-right">
 	<p class="descrizione" id="d-sant-orsola"><b>Una leggenda, composta alla fine del duecento,  racconta la storia di una giovane bretone di nome Orsola che, promessa sposa al figlio del re d’Inghilterra, pone come condizione un pellegrinaggio a Roma, durante il quale il giovane riceve il battesimo. Al gruppo si uniscono undicimila vergini, lo stesso papa Ciriaco, vescovi e personaggi di rango. Nel viaggio di ritorno presso le mura di Colonia la folta comitiva viene però assalita dagli Unni e Orsola, resistendo alle richieste di matrimonio del re unno, verrà trucidata insieme alle undicimila vergini da lei battezzate.</b></p>
@@ -113,55 +146,104 @@
 	</div>
 
 </div>
+  </div>
 
+  <div id="barra-storia" class="w3-container city barra-paragrafo barra-storia-descrizione" style="display:none">
+    <h2>STORIA DEL BORGO VERSUTTA E CHIESA DI SANT'ANTONIO</h2>
+    <p>Versutta (Versute in friulano standard, Versuta in friulano occidentale) è una località del comune di Casarsa della Delizia, in provincia di Pordenone, a 3 km a sud-est del capoluogo.<br>
+    	Il nome "Versutta" deriva dalla presenza del rio Versa, piccolo corso d'acqua che attraversa il borgo.
+    	Monumento artistico di pregio qui edificato è la chiesa di Sant'Antonio abate, risalente al XIII secolo, che contiene al suo interno cicli di affreschi del XIV e della prima metà del XV secolo.
+    	Versutta è nota perché durante la Seconda guerra mondiale il poeta Pier Paolo Pasolini vi sfollò con la madre, mentre il centro abitato di Casarsa veniva semidistrutto dai bombardamenti.
+    	All'inizio del 1945 viene fondata a Versutta l'Academiuta di lenga furlana, per la valorizzazione della lingua e della cultura friulana, di cui faceva parte lo stesso Pasolini.
+    	Il 13 gennaio si tiene a Versutta la festa di Sant'Antonio abate.
+	</p> 
+  </div>
 
+  <div id="barra-mappa" class="w3-container city" style="display:none">
+    <iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8814.30128387123!2d12.84702531830867!3d45.944540375026996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd758096d26d5%3A0x2b08aaecbdbab6!2sChiesetta%20di%20Versutta!5e1!3m2!1sit!2sit!4v1612015450865!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+	</iframe>
 
-<button id="button-scroll-top">Torna all'inizio</button>
-
-<div id="bottone">
-	<button onclick="visitPage()" id="button-home">Torna alla Home</button>
+	<iframe class="mappa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8814.30128387123!2d12.84702531830867!3d45.944540375026996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bd758096d26d5%3A0x2b08aaecbdbab6!2sChiesetta%20di%20Versutta!5e1!3m2!1sit!2sit!4v1612015450865!5m2!1sit!2sit" width="770" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+	</iframe>
+  </div>
 </div>
 
 <script>
-    function visitPage(){
-        window.location="../index.html";
-    }
-</script>
-
- <script src="librerie/aos-master/aos-master/dist/aos.js"></script>
-  <script>
-    AOS.init({
-    	delay: 250,
-    	duration: 1000,
-    });
-  </script>
-
-   <script>
-//Get the button
-var mybutton = document.getElementById("button-scroll-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" rosso", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " rosso";
 }
-
-mybutton.onclick = function(){topFunction()};
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 </script>
 
- </body>
 
- <footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>
-</html>
+	<button id="button-scroll-top">Torna all'inizio</button>
+
+	<div class="bottone">
+		<button onclick="visitPage()" class="bottone1" id="button-home">Torna alla Home</button>
+	</div>
+
+	<script>
+	    function visitPage(){
+	        window.location="../index.html";
+	    }
+	</script>
+
+	<script src="librerie/aos-master/aos-master/dist/aos.js"></script>
+	<script>
+	    AOS.init({
+	    	delay: 250,
+    	duration: 500,
+	    });
+	</script>
+
+	<script>
+
+		//SCROLL TO TOP
+		var mybutton = document.getElementById("button-scroll-top");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		mybutton.onclick = function(){topFunction()};
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script>
+
+		//SCROLL TO END (MAPPA)
+		var mybutton_end = document.getElementById("button-scroll-end");
+
+		mybutton_end.onclick = function(){endFunction()};
+
+		// When the user clicks on the button, scroll to the end of the document
+		function endFunction() {
+		  document.body.scrollTop = 9999;
+		  document.documentElement.scrollTop = 9999;
+		}
+
+	</script>
+
+	</body>
+
+ 	<footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>

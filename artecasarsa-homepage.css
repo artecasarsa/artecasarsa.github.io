@@ -35,14 +35,14 @@ body {
 
   .titolo-sito img{
   margin: 0 20px 0px 20px;
-  width: 40px !important;
-  height: 40px !important;
+  width: 50px;
+  height: 50px;
 }
 
-#titolo1{
+.titolo-sito h2{
   align-self: center;
-  font-size: 7vw;
-  font-weight: bold;
+  font-size: 9vw !important;
+  //font-weight: bold;
   //margin: 0;
 }
 
@@ -197,10 +197,10 @@ body {
 
 /*TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
-  .titolo-sito{
+  /*.titolo-sito{
     //background: yellow;
     display: flex;
-    margin-left: 8vw;
+    margin-left: 7vw;
     margin-top: 0.5vw;
     margin-bottom: 0vw;
     margin-right: 0vw;
@@ -229,7 +229,38 @@ body {
   font-weight: bold;
   font-size: 2.5vw;
   margin: 0;
+}*/
+
+.titolo-sito{
+    //background: yellow;
+    display: flex;
+    margin-left: 9vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+    margin-right: 0vw;
+    color: white;
+
+  //font-size: 30px;
+  font-family: "Arvo", monospace;
 }
+
+  .dropdown{
+    align-self: center;
+  }
+
+  .dropdown img {
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+
+.titolo-sito h2{
+  align-self: center;
+  font-size: 2.5vw;
+  margin: 0;
+}
+
 
 /*FINE TITOLO DELLA PAGINA WEB - artecasarsa - E STEMMA*/
 
@@ -244,6 +275,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
+  //left: 0;
   background-color: #f9f9f9;
   min-width: 12vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

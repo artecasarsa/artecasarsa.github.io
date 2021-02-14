@@ -10,12 +10,12 @@
 
 @media (min-width: 800px){
   .zoom{
-    transition: transform 0.5s;
+    transition: transform 0.1s;
   }
 
   .zoom:hover{
       transform: scale(1.25) !important;
-      z-index: 2;
+      z-index: 99;
   }
 
   .zoom1{
@@ -31,7 +31,7 @@ html{
   .titolo-sito{
     //background: yellow;
     display: flex;
-    margin-left: 5vw;
+    margin-left: 9vw;
     margin-top: 0.5vw;
     margin-bottom: 0vw;
     margin-right: 0vw;
@@ -275,7 +275,7 @@ html{
   }
 
   .immagine{
-    max-width: 30%;
+    max-width: 40%;
     max-height:auto;
     align-self: center;
     margin: 0vw;
@@ -344,58 +344,107 @@ img#san-antonio{
 img#madonna-e-bambino{
   filter: saturate(1.3);
   //filter: brightness(1.2);
+  max-width: 50%;
 }
 
 #td-madonna-e-bambino{
-  background-color: #E1C45B;
+  background-color: #e9c46a
 }
 
 /*Terzo paragrafo*/
 
-#td-pala-interno{
+#td-san-floriano{
   background-color: #ba8449;
 }
 
-img#pala-interno-madonna-e-san-antonio{
+img#san-floriano{
+  max-width: 35%;
   align-self: center;
-  filter: saturate(1.3);
+  //filter: saturate(1.3);
   //filter: brightness(1.2);
-}
-
-#d-pala-interno2{
-  background-color: #ba8449;
 }
 
 /*Quarto paragrafo*/
 
-#p-affreschi-medievali-ascensione{
-  margin-left: 1vw;
-  margin-right: 1vw;
+#p-4-santi{
+  //margin-left: 1vw;
+  //margin-right: 1vw;
 }
 
-#td-affreschi-medievali-ascensione{
-  background: #7b4b3e;
+#td-4-santi{
+  background-color: #DB7C64;
   //width: 100%;
   //height:500px;
 }
 
-img#ascensione-parete-destra{
-  //width: 523px;
-  //height: 450px;
-  align-self: center;
+/*Quinto paragrafo - Madonna e Santi*/
+
+img#madonna-e-santi{
+  width: 40%;
 }
 
-/*Quinto paragrafo - Sant'Orsola*/
-
-#p-sant-orsola{
-  margin-left: 1vw;
-  margin-right: 1vw;
+#p-madonna-e-santi{
+  //margin-left: 1vw;
+  //margin-right: 1vw;
 }
 
- #td-sant-orsola{
-    background: #C69880;
+ #td-madonna-e-santi{
+    background: #debb7b;
   }
 
-  #td-sant-orsola2{
-    background: #C69880;
-  }
+/*Fine quinto paragrafo*/
+
+/*Paragrafo 6 - Sante Destra*/
+
+img.sante{
+  width: 17vw;
+  height: 22vw;
+}
+
+#td-sante-destra{
+  background-color: #e7a477;
+}
+
+/*Fine Paragrafo 6*/
+/*Paragrafo 7 Storie 1-2*/
+
+
+/*#colonna-coppie{
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  flex-grow: 1;
+}*/
+
+#td-storie-sinistra{
+  background-color: #FD986A;
+}
+
+img.storie{
+ width: 30vw;
+ height: 20vw;
+ z-index: 1;
+}
+
+img#storie-1-cattura{
+  margin-right: 0.3vw;
+  margin-bottom: 0.3vw;
+  position: relative
+}
+
+img#storie-2-condanna{
+  margin-bottom: 0.3vw;
+  position: relative
+}
+
+img#storie-3-martirio{
+  margin-right: 0.3vw;
+  position: relative
+}
+
+img#storie-4-aquila{
+  position: relative
+}
+
+
+

@@ -208,10 +208,21 @@
 
 
 	.immagine{
-	    max-width: 100%;
+	    max-width: 100% !important;
+	    width: 100% !important;
+	    height: auto !important;
 	    max-height:auto;
 	    align-self: center;
 	    margin: 0vw;
+  	}
+
+  	.storie{
+  		max-width: 100% !important;
+	    width: 100% !important;
+	    height: auto !important;
+	    max-height:auto;
+	    align-self: center;
+	    margin: 0.3vw !important;
   	}
 
   	
@@ -231,5 +242,4 @@
   		margin-top: 5vw;
   
 	}
-
 }
