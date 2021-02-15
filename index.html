@@ -173,7 +173,10 @@
   }).addTo(mymap);
 
   /*ELEMENTI DEI VARI POPUP SUI MARKER DELLA MAPPA*/
-  var bottone_popup = "<button>SCOPRI IL LUOGO</button>"
+  var bottone_popup_versutta = "<div class='bottone'><button onclick='visitPage1()' id='button-home'>SCOPRI IL LUOGO</button></div>"
+  var bottone_popup_san_floriano = "<div class='bottone'><button onclick='visitPage2()' id='button-home'>SCOPRI IL LUOGO</button></div>"
+  var bottone_popup_loggia = "<div class='bottone'><button onclick='visitPage3()' id='button-home'>SCOPRI IL LUOGO</button></div>"
+  var bottone_popup_santa_croce = "<div class='bottone'><button onclick='visitPage4()' id='button-home'>SCOPRI IL LUOGO</button></div>"
 
   var t_versutta = "<span class='titolo_popup'>CHIESA DI SANT'ANTONIO</span><br>";
   var img_versutta = '<img src="img-homepage/versutta-esterno-1.jpg" height="100px" width="200px"/><br>';
@@ -187,10 +190,10 @@
   var t_santa_croce = "<span class='titolo_popup'>CHIESA DI SANTA CROCE</span><br>";
   var img_santa_croce = '<img src="img-homepage/glisiut-esterno.jpg" height="100px" width="200px"/><br>';
 
-  var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).bindPopup(t_versutta+img_versutta+bottone_popup).addTo(mymap);
-  var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).bindPopup(t_san_floriano+img_san_floriano+bottone_popup).addTo(mymap);
-  var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).bindPopup(t_loggia+img_loggia+bottone_popup).addTo(mymap);
-  var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).bindPopup(t_santa_croce+img_santa_croce+bottone_popup).addTo(mymap);
+  var m_versutta = L.marker([45.94407613269287, 12.857365269416649]).bindPopup(t_versutta+img_versutta+bottone_popup_versutta).addTo(mymap);
+  var m_san_floriano = L.marker([45.932728197592276, 12.845183540857404]).bindPopup(t_san_floriano+img_san_floriano+bottone_popup_san_floriano).addTo(mymap);
+  var m_loggia = L.marker([45.942135761379355, 12.837559802784147]).bindPopup(t_loggia+img_loggia+bottone_popup_loggia).addTo(mymap);
+  var m_santa_croce = L.marker([45.954504693331444, 12.83842773977189]).bindPopup(t_santa_croce+img_santa_croce+bottone_popup_santa_croce).addTo(mymap);
   /*FINE ELEMENTI DEI VARI POPUP SUI MARKER DELLA MAPPA*/
 
 
@@ -215,6 +218,22 @@ m_san_floriano.on('click', function(){
 })
 
 </script>
+
+<script>
+      function visitPage1(){
+          window.location="Versutta/versutta.html";
+      }
+
+      function visitPage2(){
+          window.location="San-Floriano/san-floriano.html";
+      }
+      function visitPage3(){
+          window.location="Loggia/loggia.html";
+      }
+      function visitPage4(){
+          window.location="Santa-Croce/santa-croce.html";
+      }
+  </script>
 
 </body>
   <footer class="pie-pagina" id="autore">Ruben Castellarin - Novembre 2020 ©</footer>

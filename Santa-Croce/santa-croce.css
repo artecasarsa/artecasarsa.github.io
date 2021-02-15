@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Arvo';
-  src: url('fonts/Arvo/Arvo-Regular.ttf');
+  src: url('../fonts/Arvo/Arvo-Regular.ttf');
 }
 
 @font-face{
   font-family: "Montserrat_Alternates";
-    src: url("fonts/MontserratAlternates-Bold.ttf"); 
+    src: url("../fonts/MontserratAlternates-Bold.ttf"); 
 }
 
 @media (min-width: 896px){
@@ -369,16 +369,15 @@ img#san-antonio{
 
 /*Secondo Paragrafo*/
 
-#p-affreschi-esterni{
+#p-figure-arco{
   
 }
 
-#affresco-esterno-completo{
-  filter: saturate(1.3);
-  //filter: brightness(1.2);
+.arco{
+  height: 30vw;
 }
 
-#td-affreschi-esterni{
+#td-figure-arco{
   background-color: #8e3b46;
 }
 
@@ -402,40 +401,46 @@ img#pala-interno-madonna-e-san-antonio{
 
 /*Quarto paragrafo*/
 
-#p-affreschi-medievali-ascensione{
+#p-elena-croce-costantino{
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
-#td-affreschi-medievali-ascensione{
+#td-elena-croce-costantino{
   background: #7b4b3e;
   //width: 100%;
   //height:500px;
 }
 
-img#ascensione-parete-destra{
-  //width: 523px;
-  //height: 450px;
-  align-self: center;
+img#elena-costantino-legno{
+  max-width: 100%;
+  width: 50%;
+}
+
+img#via-crucis{
+  max-width: 100%;
+  width: 50%;
+}
+
+img#crocifissione-gesu{
+  max-width: 100%;
+  width: 50%;
+
 }
 
 /*Quinto paragrafo - Sant'Orsola*/
 
-#p-sant-orsola{
+#p-deposizione{
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
-img#sant-orsola{
+img#deposizione-cristo{
   max-width: 100% !important;
-  width: 740px;
+  width: 50%;
 }
 
- #td-sant-orsola{
-    background: #C69880;
-  }
-
-  #td-sant-orsola2{
+ #td-deposizione{
     background: #C69880;
   }
 
@@ -446,4 +451,14 @@ img#sant-orsola{
   }
 
 /*Settimo paragrafo - */
+
+/*9*/
+img#miracolo-croce{
+  width: 50%;
+}
+
+img#eraclio-croce{
+  max-width: 100%;
+  width: 50%;
+}
 
