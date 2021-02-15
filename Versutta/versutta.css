@@ -9,6 +9,7 @@
 }
 
 @media (min-width: 896px){
+  
   .zoom{
     transition: transform 0.1s;
   }

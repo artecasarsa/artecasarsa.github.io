@@ -187,7 +187,7 @@
     color: #241023;
     //font-size: 3vw;
     margin-top: 5vw;
-    background-color: #E0777D;
+    background-color: #D3B88C;
     //width: 70%;
     //top: 100px;
     position: relative;
@@ -458,6 +458,11 @@ img#miracolo-croce{
 }
 
 img#eraclio-croce{
+  max-width: 100%;
+  width: 50%;
+}
+
+img#lapide-turchi{
   max-width: 100%;
   width: 50%;
 }
