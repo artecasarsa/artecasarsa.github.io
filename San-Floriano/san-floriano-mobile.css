@@ -254,7 +254,7 @@
 	    height: auto !important;
 	    max-height:auto;
 	    align-self: center;
-	    margin: 0.3vw !important;
+	    //margin: 0.3vw !important;
   	}
 
   	
@@ -272,6 +272,12 @@
 
   	#p-trinita-e-donatore{
   		margin-top: 5vw;
-  
 	}
+
+	.coppia1{
+  		display: flex;
+  		flex-direction: column;
+  		//background-color: red;
+	}
+
 }
